@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    color: gray;
+}
+
+canvas {
+    box-shadow: 0px 0px 15px gray;
+}
+
+.win {
+    box-shadow: 0px 0px 15px green;
+    animation-duration: 200ms;
+    animation-name: win;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.time {
+    font-size: small;
+    color: gray;
+}
+
+.large {
+    animation-duration: 200ms;
+    animation-name: grow;
+    font-size: large;
+    color: green;
+}
+
+@keyframes win {
+    from {box-shadow: 0px 0px 15px gray;}
+    to {box-shadow: 0px 0px 20px green;}
+}
+
+@keyframes grow {
+    from {
+        font-size: small;
+        color: gray;
+    }
+    to {
+        font-size: large;
+        color: green;
+    }
+}
